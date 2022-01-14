@@ -3,7 +3,8 @@ import ExpenseDate from './ExpenseDate';
 import Card from "../UI/Card";
 import React from "react";
 function ExpenseItem(props) {
-  return (
+  return  (
+    <li>
     <Card className="expense-item">
       <ExpenseDate
         date={props.date}
@@ -14,8 +15,8 @@ function ExpenseItem(props) {
             ${props.amount}
         </div>
       </div>
-    </Card>
-  );
+    </Card></li>
+  ); 
 }
 
 export default ExpenseItem;
